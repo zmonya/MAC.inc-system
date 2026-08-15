@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mac Lagunilla.inc</title>
+    <title>ARCENGINE | Architecture & Engineering</title>
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -56,26 +56,6 @@
         }
 
         /* HEADER */
-
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.site-logo {
-    width: 58px;
-    height: 58px;
-    object-fit: cover;
-    display: block;
-    /* transform: rotate(45deg); */
-    border-radius: 10px;
-    transition: 0.3s ease;
-}
-
-.site-logo:hover {
-    transform: rotate(45deg) scale(1.08);
-}
 
         header {
             position: sticky;
@@ -656,13 +636,11 @@
 <header>
     <div class="navbar">
 
-<a href="{{ url('/') }}" class="logo">
-    <img
-        src="{{ asset('images/mac_lagunilla_logo.jpg') }}"
-        alt="Mac Lagunilla Vlog"
-        class="site-logo"
-    >
-            Mac<span>Lagunilla</span>
+        <a href="{{ url('/') }}" class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            ARC<span>ENGINE</span>
         </a>
 
         <nav>
@@ -678,7 +656,7 @@
                 <i class="fa-solid fa-moon"></i>
             </button>
 
-            <a href="#" class="signin">
+            <a href="{{ route('login') }}" class="signin">
                 Sign In
             </a>
 
@@ -699,7 +677,7 @@
         <div class="hero-content">
 
             <div class="hero-label">
-                Cornesa Ceiling • Cabinet • Construction
+                Architecture • Engineering • Construction
             </div>
 
             <h1>
